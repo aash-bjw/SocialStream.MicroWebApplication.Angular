@@ -1,6 +1,6 @@
-<p>Hello {{currentUsername}}</p>
-
-<div class="card-deck">
+<div class="col-md-2">
+<a class="user">Hello, {{currentUsername}}! </a></div><br><br>
+<!-- <div class="card-deck">
     <div class="card">
       <img src="..." class="card-img-top" alt="...">
       <div class="card-body">
@@ -33,8 +33,20 @@
     </div>
   </div>
 
-  <br>
-  <br>
-  <br>
 
+ -->
 
+        <div class="container">
+            <div class="row">
+                <div *ngFor="let video of videos">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-text">{{ video.videoName }}</h3>
+                            <p class="card-text">
+                               Description: {{ video.videoDescription }}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
