@@ -1,7 +1,9 @@
-<div class="container justify-content-center"> 
+<link href="https://fonts.googleapis.com/css?family=Arimo|Pacifico&display=swap" rel="stylesheet">
+
+<div class="container justify-content-center" style="margin-left: 650px; margin-top: 100px;"> 
   <div class="col-md-6">
     <form class="form-signin" [formGroup]="signupForm" (ngSubmit)="onSubmit()">
-      <h1 class="h3 mb-3 font-weight-normal" style="color:white;">Create your account</h1>
+      <h1 class="h3 mb-3 font-weight-normal" style="color:white; font-family: 'Arimo', sans-serif;">Create your account</h1>
       <div class="form-group">
         <label for="inputUsername" class="sr-only">Username:</label>
         <input type="text" id="inputUsername" [formControlName]="'username'" class="form-control" placeholder="Username" required="" autofocus="">
@@ -26,7 +28,7 @@
         <label for="inputConfirmPassword" class="sr-only">Password:</label>
         <input type="password" id="inputConfirmPassword" [formControlName]="'confirmPassword'" class="form-control" placeholder="Confirm Password" required="">
       </div>
-      <button class="btn btn-lg btn-primary btn-block" type="submit">Sign up</button>
+      <button class="btn btn-sm btn-dark btn-block" type="submit">Sign up</button>
     </form>
   </div>
   </div>
