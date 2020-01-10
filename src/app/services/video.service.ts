@@ -21,8 +21,8 @@ export class VideoService {
     return this.http.post<FormData>(this.videoURL, formData);
   }
 
-  public getVideo(videoId: number): Observable<Video>{
-    return this.http.get<Video>(this.videoURL + '/' + videoId);
+  public getVideo(videoName: string): Observable<Video>{
+    return this.http.get<Video>(this.videoURL + '/' + videoName);
   } 
 
   public getAllVideos(){
