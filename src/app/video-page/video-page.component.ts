@@ -17,14 +17,13 @@ export class VideoPageComponent implements OnInit {
 
    }
 
-  
-
   ngOnInit() {
+    this.videoName = this.route.snapshot.paramMap.get('videoName')
     this.getVideo();
   }
 
  getVideo(){
-   const videoName = + this.route.snapshot.paramMap.get('videoName');
+  // const videoName = + this.route.snapshot.paramMap.get('videoName');
    this.videoService.getVideo(this.videoName).subscribe(video => this.video = video);
  }
 }
